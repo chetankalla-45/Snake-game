@@ -64,17 +64,6 @@ snake-game/
 
 ---
 
-## Deployment
-
-This project is deployed on [Vercel](https://vercel.com) as a static site.
-
-To deploy your own copy:
-1. Push this folder to a GitHub repository.
-2. Import the repo into Vercel.
-3. Make sure the entry file is named `index.html` (Vercel serves this at the root `/` by default). If you'd rather keep it named `snake.html`, include the provided `vercel.json` rewrite instead.
-4. Deploy — no build step required, this is a static HTML/CSS/JS project.
-
----
 
 ## Tech Stack
 
