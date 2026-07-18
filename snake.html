@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Snake</title>
+<link rel="stylesheet" href="snake.css">
+</head>
+<body>
+
+<div class="game-wrap">
+  <div class="hud">
+    <div class="hud-box">High Score : <span id="highScore">0</span></div>
+    <div class="hud-box">Score : <span id="score">0</span></div>
+    <div class="hud-box">time : <span id="time">00-00</span></div>
+  </div>
+
+  <canvas id="board" width="720" height="480"></canvas>
+
+  <div class="controls-row">
+    <button id="pauseBtn" class="pause-btn">Pause</button>
+  </div>
+
+  <!-- <div class="hint">Arrow keys / WASD to move &nbsp;&middot;&nbsp; Space to pause &nbsp;&middot;&nbsp; Swipe or use the pad below on mobile</div> -->
+
+  <div class="dpad" id="dpad">
+    <button class="dpad-btn dpad-up" data-dir="up" aria-label="Up">&#9650;</button>
+    <button class="dpad-btn dpad-left" data-dir="left" aria-label="Left">&#9664;</button>
+    <button class="dpad-btn dpad-down" data-dir="down" aria-label="Down">&#9660;</button>
+    <button class="dpad-btn dpad-right" data-dir="right" aria-label="Right">&#9654;</button>
+  </div>
+</div>
+
+<div class="overlay show" id="startOverlay">
+  <h1>Snake</h1>
+  <p>High Score : <span id="startHighScore">0</span></p>
+  <button id="playBtn">Play</button>
+</div>
+
+<div class="overlay" id="overlay">
+  <h1>Game Over</h1>
+  <p id="finalScoreText"></p>
+  <button id="restartBtn">Play Again</button>
+</div>
+
+<script src="snake.js"></script>
+
+</body>
+</html>
